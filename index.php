@@ -21,9 +21,9 @@ if (!isset($_SESSION['status_login'])) {
 
         body {
             font-family: Arial, sans-serif; 
-            margin: 0; /* Menghilangkan margin default dari browser */
-            background-color: #f4f4f4; /* Warna abu-abu muda untuk latar belakang */
-            color: #333333; /* Warna teks utama (abu-abu gelap) */
+            margin: 0; 
+            background-color: #f4f4f4; 
+            color: #333333; 
             line-height: 1.6;
             text-align: justify;  
         }
@@ -32,20 +32,20 @@ if (!isset($_SESSION['status_login'])) {
 
         /*  HEADER  */
         header {
-            background-color: #306497; /* Warna biru sebagai aksen utama */
-            color: #ffffff; /* Teks putih */
+            background-color: #306497; 
+            color: #ffffff;
             padding: 20px 0;
             text-align: center;
         }
 
-        /* mengatur foto profil */
+        
         header img {
             width: 150px;
             height: 150px;
-            border-radius: 50%; /* Membuat gambar lingkaran */
+            border-radius: 50%; 
             object-fit: cover; 
             margin-bottom: 15px;
-            border: 3px solid #000000; /* Garis tepi untuk foto profil */
+            border: 3px solid #000000; 
         }
 
         header h1 {
@@ -61,59 +61,59 @@ if (!isset($_SESSION['status_login'])) {
 
         /* NAVIGASI (MENU) */
         nav {
-            background-color: #333; /* Latar belakang menu  */
+            background-color: #333; 
             padding: 10px 0;
             text-align: center;
-            position: sticky; /* Membuat menu tetap menempel di atas saat di-scroll */
+            position: sticky; 
             top: 0;
             z-index: 100;
         }
 
         nav ul {
-            list-style: none; /* Menghilangkan tanda bullet */
+            list-style: none; 
             padding: 0;
             margin: 0;
-            display: flex; /* Membuat menu jadi horizontal */
-            justify-content: center; /* Menengahkan menu */
-            flex-wrap: wrap; /* Agar menu bisa turun ke bawah di layar kecil */
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
         }
 
         nav ul li {
-            margin: 5px 15px; /* Memberi jarak antar menu */
+            margin: 5px 15px; 
         }
 
         nav ul li a {
-            color: #ffffff; /* Warna link menu */
-            text-decoration: none; /* Menghilangkan garis bawah link */
+            color: #ffffff; 
+            text-decoration: none; 
             font-weight: bold;
             padding: 5px 10px;
-            transition: all 0.3s ease; /* Transisi halus untuk hover */
+            transition: all 0.3s ease; 
         }
 
         nav ul li a:hover {
-            background-color: #007BFF; /* Ubah latar belakang saat disentuh mouse */
-            border-radius: 5px; /* Membuat sudut sedikit melengkung */
+            background-color: #007BFF; 
+            border-radius: 5px; 
         }
 
         /* KONTEN UTAMA (MAIN & SECTION)  */
         main {
-            /* Mengatur semua layar dari atas ke bawah dengan ukuran */
+           
             max-width: 10000px;
-            margin: 20px auto; /* Menengahkan konten utama */
+            margin: 20px auto; 
             padding: 0 20px;
         }
 
         section {
-            background-color: #ffffff; /* Latar belakang putih untuk setiap bagian */
+            background-color: #ffffff; 
             margin-bottom: 20px; 
             padding: 30px;
             border-radius: 8px; 
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan  */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
         }
 
         section h2 {
-            color: #007BFF; /* Judul bagian menggunakan warna aksen */
-            border-bottom: 2px solid #f4f4f4; /* Garis bawah tipis */
+            color: #007BFF; 
+            border-bottom: 2px solid #f4f4f4; 
             padding-bottom: 10px;
         }
 
@@ -123,10 +123,10 @@ if (!isset($_SESSION['status_login'])) {
 
         /*  BAGIAN GALERI Foto */
         #gallery {
-            /* Menggunakan Grid untuk layout   */
+           
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 2fr)); /* digunakan untuk menyesuaikan dengan sendiri nya pada setiap kolom gambar/foto*/
-            gap: 20px; /* Jarak antar item galeri */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 2fr)); 
+            gap: 20px; 
         }
 
         /* "article"  Pengalaman */
@@ -135,18 +135,18 @@ if (!isset($_SESSION['status_login'])) {
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             transition: transform 0.3s ease;
-            display: flex; /* Digunakan untuk mengatur tampilan pada web*/
-            flex-direction: column; /* Konten kartu ditumpuk vertikal */
+            display: flex; 
+            flex-direction: column; 
         }
 
         #gallery article:hover {
-            transform: translateY(-5px); /* Efek  */
+            transform: translateY(-5px); 
         }
 
-        #gallery article img { /* untuk menaruh foto2 project */
-            max-width: 100%; /* Membuat gambar responsif (memenuhi kartu) */
-            height: 200px; /*  Tinggi gambar di galeri  */
-            object-fit: cover; /* Memastikan gambar memenuhi area  */
+        #gallery article img { 
+            max-width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
         }
@@ -154,7 +154,7 @@ if (!isset($_SESSION['status_login'])) {
         /* bagian gallery foto*/
         .card-content {
             padding: 15px;
-            flex-grow: 1; /* Membuat konten teks mengisi sisa ruang */
+            flex-grow: 1; 
             display: flex;
             flex-direction: column;
         }
@@ -164,24 +164,24 @@ if (!isset($_SESSION['status_login'])) {
         }
 
         .card-content p {
-            flex-grow: 1; /* Mendorong tombol ke bagian bawah */
-            font-size: 0.9em; /* Sedikit perkecil ukuran teks deskripsi */
+            flex-grow: 1; 
+            font-size: 0.9em;
             color: #555;
         }
 
-        #gallery article a { /*mengatur tombol galerry menjadi biru*/
+        #gallery article a { 
             display: inline-block;
-            margin-top: 10px; /* Jarak dari paragraf di atasnya */
+            margin-top: 10px; 
             background-color: #007BFF;
             color: #fff;
             padding: 8px 12px;
             text-decoration: none;
             border-radius: 5px;
-            width: fit-content; /* Lebar tombol pas dengan teks */
+            width: fit-content; 
         }
 
         #gallery article a:hover {
-            background-color: #0056b3; /*berfungsi untuk mengubah tampilan warna tombol semula biru menjadi biru gelap*/
+            background-color: #0056b3; 
         }
 
 
@@ -194,7 +194,7 @@ if (!isset($_SESSION['status_login'])) {
         }
 
         #article article:last-child {
-            border-bottom: none; /* menghilangkan garis di artikel terakhir */
+            border-bottom: none; 
         }
 
         #article article h3 {
@@ -205,7 +205,7 @@ if (!isset($_SESSION['status_login'])) {
             margin-top: 5px;
         }
 
-        /* CSS Tambahan: List di dalam artikel */
+        
         #article article ul {
             margin-top: 10px;
             padding-left: 20px;
@@ -218,12 +218,12 @@ if (!isset($_SESSION['status_login'])) {
         }
 
         form label {
-            display: block; /* Buat label di atas input field */
+            display: block; 
             margin-bottom: 5px;
             font-weight: bold;
         }
 
-        form input[type="nama"], /*form input ini digunakan untuk membuat pada bagian untuk mengisi email,pesan,teks */
+        form input[type="nama"], 
         form input[type="email"],
         form input[type="pesan"] {
             width: 100%; 
@@ -232,8 +232,8 @@ if (!isset($_SESSION['status_login'])) {
             border-radius: 5px;
         }
 
-        form input[type="submit"] { /*digunakan pada KIRIM PESAN*/
-            background-color: #28a745; /* Warna hijau untuk tombol kirim */
+        form input[type="submit"] { 
+            background-color: #28a745; 
             color: #ffffff;
             border: none;
             padding: 12px 20px;
@@ -241,12 +241,12 @@ if (!isset($_SESSION['status_login'])) {
             text-align: justify;
             font-weight: bold;
             border-radius: 5px;
-            cursor: pointer; /* Mengubah kursor menjadi tangan */
+            cursor: pointer; 
             transition: background-color 0.5s ease;
         }
 
-        form input[type="submit"]:hover { /*Pada bagian Kirim Pesan ketika di klik berubah menjadi warna hitam pada background nya */
-            background-color: #218838; /* Warna hijau jadi gelap saat hover */
+        form input[type="submit"]:hover { 
+            background-color: #218838; 
         }
 
         
@@ -254,13 +254,13 @@ if (!isset($_SESSION['status_login'])) {
         /* CSS untuk bagian Skills */
         .skills-container {
             display: flex;
-            flex-wrap: wrap; /* Agar bisa responsif di layar kecil */
-            gap: 20px; /* Jarak antar 2 kolom skills */
+            flex-wrap: wrap; 
+            gap: 20px; 
         }
 
         .skills-column {
-            flex: 1; /* Masing-masing kolom mengambil setengah ruang */
-            min-width: 250px; /* Lebar minimum sebelum pindah ke bawah */
+            flex: 1; 
+            min-width: 250px; 
         }
 
         .skills-column h3 {
@@ -270,7 +270,7 @@ if (!isset($_SESSION['status_login'])) {
         }
 
         .skill-list {
-            list-style: none; /* Hilangkan bullet */
+            list-style: none; 
             padding-left: 0;
         }
 
@@ -311,8 +311,7 @@ if (!isset($_SESSION['status_login'])) {
             text-decoration: underline;
         }
 
-        /* bagian job */
-        /* Container khusus untuk section Job */
+       
 #job {
     background-color: #f9f9f9;
     padding: 50px 20px;
@@ -350,11 +349,11 @@ if (!isset($_SESSION['status_login'])) {
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
-/* Ukuran Foto yang Seragam */
+
 .job-card img {
     width: 100%;
-    height: 250px; /* Tinggi tetap agar rapi */
-    object-fit: cover; /* Memastikan gambar tidak gepeng */
+    height: 250px; 
+    object-fit: cover; 
     border-bottom: 5px solid #306497;
 }
 
@@ -375,14 +374,14 @@ if (!isset($_SESSION['status_login'])) {
     font-size: 1em;
 }
 
-/* Tombol Pesan yang Lebih Cantik */
+
 .btn-pesan {
     display: inline-block;
     padding: 12px 25px;
     background-color: #28a745;
     color: white;
     text-decoration: none;
-    border-radius: 50px; /* Membuat tombol lonjong/rounded */
+    border-radius: 50px; 
     font-weight: bold;
     transition: background 0.3s ease;
 }
@@ -392,7 +391,7 @@ if (!isset($_SESSION['status_login'])) {
     box-shadow: 0 4px 10px rgba(40, 167, 69, 0.4);
 }
 
-/* --- SECTION KARYA VIDEO --- */
+
 #karya {
     background-color: #ffffff;
     padding: 50px 20px;
@@ -405,12 +404,12 @@ if (!isset($_SESSION['status_login'])) {
 }
 
 .video-wrapper {
-    max-width: 900px; /* Lebar maksimal video landscape */
+    max-width: 900px; 
     margin: 30px auto;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    background: #000; /* Background hitam jika video loading */
+    background: #000; 
 }
 
 .video-wrapper video {
@@ -435,7 +434,7 @@ if (!isset($_SESSION['status_login'])) {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 15px; /* Jarak antar tombol */
+    gap: 15px; 
     flex-wrap: wrap;
 }
 
@@ -457,13 +456,13 @@ if (!isset($_SESSION['status_login'])) {
     background-color: #25D366;
 }
 
-/* Warna Instagram Gradasi */
+
 .btn-ig {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
 .btn-contact:hover {
-    transform: translateY(-5px); /* Efek melompat sedikit ke atas */
+    transform: translateY(-5px); 
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     color: white;
 }
@@ -483,16 +482,16 @@ if (!isset($_SESSION['status_login'])) {
 
         /*  FOOTER  */
       footer {
-    display: block !important; /* Memastikan elemen dianggap sebagai blok */
-    text-align: center !important; /* Memaksa teks ke tengah */
+    display: block !important; 
+    text-align: center !important; 
     padding: 20px 0;
-    width: 100%; /* Memastikan footer selebar layar */
-    clear: both; /* Menghindari gangguan dari elemen floating di atasnya */
+    width: 100%; 
+    clear: both; 
 }
 
 footer p {
-    margin: 0; /* Menghilangkan margin bawaan paragraf */
-    display: inline-block; /* Memastikan teks dianggap satu kesatuan */
+    margin: 0; 
+    display: inline-block; 
 }
 
     </style>
@@ -500,7 +499,7 @@ footer p {
 <body>
 
     <header>
-        <img src="profil.png">
+        <img src="img/profil.png">
         <h1>DYLAN RIFQI ALFAIZI</h1>
         <p>Saya Dylan Rifqi Alfaizi, Mahasiswa Teknik Informatika & Content Creator.</p>
     </header>
@@ -566,7 +565,7 @@ footer p {
         <section id="gallery">
 
             <article>
-            <img src="Pengalaman4.jpeg" alt="Juara 1 Lomba Vlog Kudus">
+            <img src="img/Pengalaman4.jpeg" alt="Juara 1 Lomba Vlog Kudus">
             <div class="card-content">
             <h3>Juara I Lomba Vlog Kategori Umum</h3>
             <p>Juara Videografi Bertema Hari Jadi Kota Kudus ke-475 (2024).</p>
@@ -576,7 +575,7 @@ footer p {
             
 
             <article>
-                <img src="ftjur2.jpeg" alt="Penghargaan Lomba Gempur Rokok Ilegal">
+                <img src="img/ftjur2.jpeg" alt="Penghargaan Lomba Gempur Rokok Ilegal">
                 <div class="card-content">
                     <h3>Juara II Lomba Vlog "Gempur Rokok Ilegal"</h3>
                     <p>Menerima apresiasi dari Pemerintah Kabupaten Kudus (2023).</p>
@@ -585,7 +584,7 @@ footer p {
             </article>
 
             <article>
-                <img src="BoxTTG.jpeg" alt="Piagam Juara 3 Lomba TTG">
+                <img src="img/BoxTTG.jpeg" alt="Piagam Juara 3 Lomba TTG">
                 <div class="card-content">
                     <h3>Juara III Lomba Teknologi Tepat Guna</h3>
                     <p>Dalam kegiatan Perkemahan Prestasi Ma'arif NU Jawa Tengah 2023.</p>
@@ -594,7 +593,7 @@ footer p {
             </article>
 
             <article>
-                <img src="pengalaman5.jpeg" alt="Pengalaman Lomba Videografi Edukasi Lalu Lintas">
+                <img src="img/pengalaman5.jpeg" alt="Pengalaman Lomba Videografi Edukasi Lalu Lintas">
                 <div class="card-content">
                     <h3>Pengalaman Lomba Videografi Edukasi Lalu Lintas</h3>
                     <p>Meraih Juara 1 yang diselenggarakan oleh Satlantas Polres Kudus, tahun 2024</p>
@@ -603,7 +602,7 @@ footer p {
             </article>
 
             <article>
-                <img src="pengalaman2.jpeg" alt=" Dokumentasi Event Sekolah">
+                <img src="img/pengalaman2.jpeg" alt=" Dokumentasi Event Sekolah">
                 <div class="card-content">
                     <h3>Mengelola Dokumentasi Event</h3>
                     <p>Berperan aktif dalam tim dokumentasi untuk berbagai kegiatan di sekolah.</p>
@@ -612,7 +611,7 @@ footer p {
             </article>
 
             <article>
-                <img src="kegiatandesa.jpeg" alt="Berpatisipasi di Desa">
+                <img src="img/kegiatandesa.jpeg" alt="Berpatisipasi di Desa">
                 <div class="card-content">
                     <h3>Aktif Kegiatan Desa</h3>
                     <p>Membantu mengenalkan teknologi konten foto dan video di desa</p>
@@ -621,7 +620,7 @@ footer p {
             </article>
 
              <article>
-                <img src="timcreator.jpeg" alt="Tim Creator ">
+                <img src="img/timcreator.jpeg" alt="Tim Creator ">
                 <div class="card-content">
                     <h3>Membentuk Tim Conten Creator</h3>
                     <p>Bekerja sama dan konsisten bersama, tidak takut hasil dan selalu berproses.</p>
@@ -630,7 +629,7 @@ footer p {
             </article>
 
             <article>
-                <img src="partisipasievent.jpeg" alt="Berpatisipasi Event Luar">
+                <img src="img/partisipasievent.jpeg" alt="Berpatisipasi Event Luar">
                 <div class="card-content">
                     <h3>Dokumentasi Event Olahraga Futsal</h3>
                     <p>Berpengalaman selama 1 tahun menjadi bagian dari tim dokumentasi event olahraga futsal</p>
@@ -664,8 +663,8 @@ footer p {
                     <p>Juara 2 Lomba Video Kreatif Ijti Kabupaten Demak Dari Desa untuk Indonesia 25 November 2025</p>
 
              <div class="video-wrapper">
-                    <video controls poster="cvr.jpeg">
-                    <source src="vd.mp4" type="video/mp4">
+                    <video controls poster="img/cvr.jpeg">
+                    <source src="img/vd.mp4" type="video/mp4">
                     Maaf, browser Anda tidak mendukung pemutaran video langsung.
              </video>
             </div>
@@ -684,7 +683,7 @@ footer p {
 
     <div class="job-grid">
         <div class="job-card">
-            <img src="ftgrafi.jpg" alt="Jasa Fotografi">
+            <img src="img/ftgrafi.jpg" alt="Jasa Fotografi">
             <div class="job-content">
                 <h3>Fotografi </h3>
                 <p>Wisuda, Event, Dokumentasi Produk, dan Organisasi.</p>
@@ -693,7 +692,7 @@ footer p {
         </div>
 
         <div class="job-card">
-            <img src="videograper.jpg" alt="Jasa Videografi">
+            <img src="img/videograper.jpg" alt="Jasa Videografi">
             <div class="job-content">
                 <h3>Videografi Kreatif</h3>
                 <p>Cinematic Video, Konten Promosi, dan Dokumentasi Event.</p>
